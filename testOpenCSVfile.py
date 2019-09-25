@@ -10,9 +10,9 @@ root.filename = filedialog.askopenfilename(initialdir = "/",
                                                        ("text files","*.txt")))
 root.destroy() #destroy the window after we choose our file 
 
-#initialize the totals of each column to be zero
-totalOfColumnB = 0
-totalOfColumnC = 0
+columnA_List = list()
+columnB_List = list()
+columnC_List = list()
 
 import csv #need to import csv if we are going to use the csv functions available in python
 with open(root.filename) as csv_file: #open the file we chose as a csv file 
@@ -26,16 +26,16 @@ with open(root.filename) as csv_file: #open the file we chose as a csv file
         else: #each subsequent time through the loop we do the following
             print(f'\t First Column = {row[0]} Second Column = {row[1]} Third Column = {row[2]}') #print out the row
             line_count = line_count + 1 #increase the line count by 1
-            totalOfColumnB = totalOfColumnB + int(row[1]) #add columnB to the totalOfColumnB variable
-            totalOfColumnC = totalOfColumnC + int(row[2]) #add columnC to the totalOfColumnC variable
-            
-    #the averages are just the total of the column divided by the number of rows minus one (we're not counting the header row)
-    averageOfColumnB = totalOfColumnB/(line_count - 1) 
-    averageOfColumnC = totalOfColumnC/(line_count - 1)
+            columnA_List.append(int(row[0]))
+            columnB_List.append(int(row[1]))
+            columnC_List.append(int(row[2]))
 
-    #print out the results
-    print(f'Processed {line_count} lines.')
-    print(f'Average of ColumnB = {averageOfColumnB}')
-    print(f'Average of ColumnC = {averageOfColumnC}')
+averageOfColumnB = sum(columnB_List)/len(columnB_List)
+averageOfColumnC = sum(columnC_List)/len(columnC_List)
+
+#print out the results
+print(f'Processed {line_count} lines.')
+print(f'Average of ColumnB = {averageOfColumnB}')
+print(f'Average of ColumnC = {averageOfColumnC}')
 
 

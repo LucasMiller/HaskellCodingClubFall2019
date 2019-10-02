@@ -1,0 +1,10 @@
+Combine the functionality of the Week 4 script: testOpenCSVfile.py
+With the functionality of the Week 5 script: ListFilesFromDirectoryAndSubdirectories.py
+to create a script that when run will
+-- allow you to click on a directory
+-- it will then make a list of all the *.csv files in that directory
+-- it will then sequentially open each of those files and read the columns into a list
+-- it will then average each column and print the average and the filename to the screen 
+   before moving on to the next file
+   
+   

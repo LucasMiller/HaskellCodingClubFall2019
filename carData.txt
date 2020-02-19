@@ -1,0 +1,23 @@
+color: color= blue | garbage | more garbage ***
+
+windshield: not cracked |  *** | mileage: mileage= 32100.0
+
+gargbage | more garbage | | *** | transmission: transmission= automatic
+
+color: color= orange | garbage | more garbage ***
+
+windshield: not cracked |  *** | mileage: mileage= 11100.0
+
+gargbage | more garbage | | *** | transmission: transmission= manual
+
+color: color= red | garbage | more garbage ***
+
+windshield: not cracked |  *** | mileage: mileage= 3323450.0
+
+gargbage | more garbage | | *** | transmission: transmission= manual
+
+color: color= purple | garbage | more garbage ***
+
+windshield: not cracked |  *** | mileage: mileage= 3520.0
+
+gargbage | more garbage | | *** | transmission: transmission= automatic
